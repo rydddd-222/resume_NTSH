@@ -24,7 +24,6 @@ def activities():
     return render_template('activities.html', question="", answer="")
 @app.route('/leadership')
  
-#改成互動 4/14
 @app.route('/stock',methods=['GET','POST'])
 def stock():
     if request.method == 'POST':
