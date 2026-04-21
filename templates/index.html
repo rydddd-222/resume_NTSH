@@ -22,8 +22,29 @@
         header h1 {
             margin: 0;
             font-size: 28px;
-        }
-
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }    
+    </style>
+</head>
+<body>
+    <header>
+        <h1>查詢股價</h1
+</header>
+<section>
+    <div class="form-box">
+        <form action="/stock" method="post">
+            <label for="question">股票號碼:</label><br>
+            <input type="text" id="question" name="question" value="{{ question }}"><br><br>
+            <label for="answer">股價:</label><br>
+            <input type="text" id="answer" name="answer" readonly value="{{ answer }}"><br><br>
+            <input type="submit" value="送出">
+            <input type="button" value="回首頁" onclick="window.location.href='/'">
+            </form>
+        </div>
+    </section>    
+</body>    
+</html>
         header p {
             margin-top: 10px;
             font-size: 16px;
